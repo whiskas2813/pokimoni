@@ -17,6 +17,7 @@ def go(message):
 def fact_handler(message):
     feeed = choice(['ваш покемон рад и сыт '])
     bot.reply_to(message, feeed)
+
 @bot.message_handler(commands=['feed'])
 def feed_pok(message):
     if message.from_user.username in Pokemon.pokemons.keys():
