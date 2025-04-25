@@ -2,7 +2,7 @@ import telebot
 from config import token
 from random import choice
 from logic import Pokemon
-from datetime import datetime
+from datetime import datetime, timedelta
 bot = telebot.TeleBot(token) 
 
 @bot.message_handler(commands=['go'])
